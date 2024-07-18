@@ -5,10 +5,17 @@
         <!-- foo was defined -->
         {% endif -%}
 
+        {% if obj is defined %}
+            {% if obj.inner is defined -%}
+            <!-- inner was defined {{ obj.inner }}-->
+            {% endif -%}
+        {% endif -%}
+
+
         {% if bar is defined -%}
         <h1>Hey it's there!</h1>
         {% endif -%}
-
+        
         {{'to upper' | upper}}
         <div> calculation_number * 2 == {{ calculation_number * 2 }} </div>
 

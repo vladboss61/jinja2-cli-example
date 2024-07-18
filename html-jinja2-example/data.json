@@ -1,4 +1,6 @@
-{
+{   "obj": {
+        "inner": "test inner"
+    },
     "os": "OS",
     "foo": "Foo is <defined>",
     "items": [
