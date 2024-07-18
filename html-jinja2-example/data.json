@@ -1,0 +1,10 @@
+{
+    "os": "OS",
+    "foo": "Foo is <defined>",
+    "items": [
+        "foo",
+        "bar",
+        "baz"
+    ],
+    "calculation_number": 5
+}

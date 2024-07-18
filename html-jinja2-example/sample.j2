@@ -1,0 +1,24 @@
+<html>
+    {% include 'head.html' %}
+    <body>
+        {% if foo is defined -%}
+        <!-- foo was defined -->
+        {% endif -%}
+
+        {% if bar is defined -%}
+        <h1>Hey it's there!</h1>
+        {% endif -%}
+
+        {{'to upper' | upper}}
+        <div> calculation_number * 2 == {{ calculation_number * 2 }} </div>
+
+        Os Env Variable is {{ environ('OS') }}
+        Os Env Variable from data.json is {{ environ(os) }}
+
+        <ul>
+            {% for item in items -%}
+            <li>{{ item }}</li>
+            {% endfor -%}
+        </ul>
+    </body>
+</html>
